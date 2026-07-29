@@ -68,6 +68,9 @@ const themeStyleVars = computed(() => {
 
 <style lang="less">
 .app-theme-root {
-    min-height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
 }
 </style>
