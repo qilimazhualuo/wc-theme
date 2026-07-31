@@ -12,6 +12,7 @@ import useGeekTheme from './presets/geekTheme'
 import useLarkTheme from './presets/larkTheme'
 import useBlossomTheme from './presets/blossomTheme'
 import useSereneTheme from './presets/sereneTheme'
+import useStudioTheme from './presets/studioTheme'
 import type { ThemeKey } from './presets/themeMeta'
 
 type ThemeConfigSource = ConfigProviderProps | ComputedRef<ConfigProviderProps>
@@ -33,6 +34,7 @@ export const createThemeConfigMap = (): Record<ThemeKey, ThemeConfigSource> => {
         lark: useLarkTheme(),
         blossom: useBlossomTheme(),
         serene: useSereneTheme(),
+        studio: useStudioTheme(),
     }
     return themeConfigMap
 }

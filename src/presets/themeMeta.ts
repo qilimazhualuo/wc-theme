@@ -11,6 +11,7 @@ export type ThemeKey =
     | 'lark'
     | 'blossom'
     | 'serene'
+    | 'studio'
 
 export type ThemeOption = {
     key: ThemeKey
@@ -30,6 +31,7 @@ export const themeOptions: ThemeOption[] = [
     { key: 'lark', label: '知识协作' },
     { key: 'blossom', label: '桃花粉' },
     { key: 'serene', label: '静谧' },
+    { key: 'studio', label: '创作工坊' },
 ]
 
 /** localStorage key，主/子应用共用 */
@@ -38,7 +40,7 @@ export const THEME_STORAGE_KEY = 'wc-ui-theme'
 /** 无界 bus 事件名，主应用切换后通知子应用 */
 export const THEME_CHANGE_EVENT = 'wc-theme-change'
 
-export const DARK_THEME_KEYS: ThemeKey[] = ['dark', 'geek']
+export const DARK_THEME_KEYS: ThemeKey[] = ['dark', 'geek', 'studio']
 
 export const isThemeKey = (value: string): value is ThemeKey => (
     themeOptions.some((option) => option.key === value)
